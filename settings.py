@@ -1,0 +1,49 @@
+SCREEN_HEIGHT = 360
+SCREEN_WIDTH = 640
+
+TASK_PADDING = 10
+TASK_RECT_WIDTH = 200
+TASK_RECT_HEIGHT = 50
+TOTAL_TASKBAR_WIDTH = TASK_RECT_WIDTH + TASK_PADDING
+TOTAL_TASKBAR_HEIGHT = SCREEN_HEIGHT - 40
+
+
+# this means 16 by 16 pixels
+GARDEN_TILE_SIZE = 20
+GARDEN_SCREEN_AREA = SCREEN_WIDTH - TASK_RECT_WIDTH
+
+ADD_BUTTON_SIZE = 60
+ADD_BUTTON_PADDING = 6
+ADD_BUTTON_TEXT_COLOR = (90, 90, 90)
+ADD_BUTTON_BG_COLOR = (0xD3, 0xD3, 0xD3)
+ADD_BUTTON_LOCATION_Y = SCREEN_HEIGHT - (ADD_BUTTON_SIZE + ADD_BUTTON_PADDING)
+ADD_BUTTON_LOCATION_X = SCREEN_WIDTH - (ADD_BUTTON_SIZE + ADD_BUTTON_PADDING)
+
+ADD_TASK_PRIORITY_LENGTH = 80
+ADD_TASK_TEXT_LENGTH = SCREEN_WIDTH - (TOTAL_TASKBAR_WIDTH + ADD_TASK_PRIORITY_LENGTH + 5)
+ADD_TASK_HEIGHT = SCREEN_HEIGHT//10
+
+TOOLBAR_HEIGHT = 6
+AVAILABLE_TILES = [
+    # get all the non-rotating ones first
+    "grass.png",
+    "flower-red.png",
+    "flower-blue.png",
+    "road.png",
+    "flower-pink.png",
+    "cat.png",
+    # all the rotating ones
+    "water.png",
+    "river-straight.png",
+    "river-bend.png",
+    "water-edge.png",
+    "water-corner.png",
+    "water-river.png"
+]
+
+TILE_SELECTOR_Y = 40
+TILE_SELECTOR_SCALE = 2
+TILE_SELECTOR_X = SCREEN_WIDTH - (GARDEN_TILE_SIZE * 2)
+
+COLOR_BLACK = (0, 0, 0)
+SELECTED_GRAY = (90, 90, 90)
